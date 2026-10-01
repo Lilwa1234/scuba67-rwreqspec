@@ -167,3 +167,23 @@
 - สร้าง plan.md สำหรับ UC04 ตามแนวทางการออกแบบ Transaction Feed, Pending logic, Bank Ref ID, discrepancy log, workflow testing, และลำดับงานที่ใช้ Traceability กับ ASM IDs
 - ไม่พบ Open Questions ที่ค้างอยู่หลัง clarify สำหรับ UC04 ปัจจุบัน
 
+---
+
+## 2026-10-01 เวลาไม่ระบุ คำสั่ง: /plan Scuba-67/001/001spec.md
+
+- เครื่องมือ: Copilot ใน Codespaces
+- ผลลัพธ์: Scuba-67/001/plan.md
+- Constraint ที่ AI ยังไม่ได้ใช้: ไม่มี CON, DOM หรือ IF ID ใน spec จึงไม่มี constraint ในกลุ่มนี้ให้ใช้; วิธีเชื่อมต่อ KOT และหน้าจอรับเงินยังไม่ได้ระบุ
+- สิ่งที่ AI บอกว่าอยากเดาแต่ไม่ได้เดา:
+  - แหล่งข้อมูลเมนู ราคา modifiers และสถานะสต๊อก
+  - วิธีเชื่อมต่อและจัดการกรณีส่ง KOT หรือยอดไปหน้าจอรับเงินไม่สำเร็จ
+  - ฐานข้อมูลและขอบเขตการจัดเก็บข้อมูล
+- Open Questions ใน spec: ไม่มีหัวข้อหรือรายการ Open Questions
+- สิ่งที่แก้ใน plan:
+  - สร้าง `Scuba-67/001/plan.md` ตามหัวข้อ 8 ส่วนจาก prompt โดยยึด UC01 Main Flow, Alternative Flow และ ASM IDs เดิม
+  - ระบุเทคโนโลยีตามค่าเริ่มต้นของ prompt พร้อมกำกับว่าเป็นการเลือกของทีม ไม่ได้มาจาก spec
+  - ระบุว่า spec ไม่มี FR, AC, CON, DOM หรือ IF IDs โดยไม่สร้าง ID ใหม่
+  - คงการลบ `Scuba-67/001/001plan.md` ไว้ตามสถานะ worktree และไม่แก้ spec ที่ทีมปรับไว้
+
+---
+
