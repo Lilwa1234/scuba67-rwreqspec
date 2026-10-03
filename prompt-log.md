@@ -220,3 +220,21 @@
 
 ---
 
+## 2026-10-03 00:00 คำสั่ง: /plan
+
+- เครื่องมือ: Copilot ใน Codespaces
+- ผลลัพธ์: Scuba-67/005/plan.md
+- Constraint ที่ AI ยังไม่ได้ใช้: ไม่มี CON, DOM หรือ IF ID ใน spec จึงไม่มีข้อจำกัดบังคับด้านระบบภายนอกหรือข้อมูลที่ต้องกำหนดในแผนนี้
+- สิ่งที่ AI บอกว่าอยากเดาแต่ไม่ได้เดา: รูปแบบ protocol ของ Real-time Sync ที่ใช้ในระบบจริง, ระดับความละเอียดของ payload ที่ส่งจาก CRUD API ไปยัง POS, และความชัดเจนของ UI/UX สำหรับหน้า Single Page Form หากต้องรองรับการใช้งานจริง
+
+### สิ่งที่แก้ใน plan.md
+
+- สร้างแผนเทคนิคสำหรับ UC05 โดยยึดแนวทางของ spec และ traceability ไปยัง `UC05`, `Main Flow`, `Alternative Flow`, และ `ASM-01` ถึง `ASM-06`
+- ระบุเทคโนโลยีเริ่มต้นตาม prompt คือ React (Vite) + Python FastAPI พร้อมบันทึกว่าเลือกเอง ไม่ได้มาจาก spec
+- กำหนดโมเดลข้อมูลหลักสำหรับ Menu, Category, ModifierGroup, ModifierOption และ sync event
+- วางแผน API และหน้าจอสำหรับการจัดการเมนูและ instant sync
+- ระบุว่ามีไม่มี CON / DOM / IF ID ใน spec จึงไม่สามารถสร้าง constraint verification ที่มี ID จริงได้
+- ระบุว่า spec ยังไม่มี AC ID และต้องมีการเพิ่ม AC ให้ชัดก่อนเริ่มเขียน Automated Test อย่างเป็นทางการ
+
+---
+
