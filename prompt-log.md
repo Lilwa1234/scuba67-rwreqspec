@@ -187,3 +187,10 @@
 
 ---
 
+
+## 2026-10-03 คำสั่ง: ช่วยร่าง template 3 ไฟล์ (การบ้าน week 10+11) แต่ไม่ต้องอัปขึ้น GitHub
+
+- เครื่องมือ: Claude Code
+- ผลลัพธ์: `specs/backlog.md`, `specs/changes/CR-001.md`, `specs/CHANGELOG.md` (template ยังไม่ commit)
+- สิ่งที่ AI ไม่ได้เดา: ค่า MoSCoW / Kano / Value / Effort, ผลการเจรจา, ผลตัดสิน CR, FR / AC / Q ID ใหม่ เว้นเป็น `<...>` ให้ทีมกรอก
+- คำถามที่ AI ถามทีม: spec ที่จะขึ้น v3 คือ `Scuba-67/SPEC/Scuba67-spec.md` (ตอนนี้ Draft v1) หรือ spec รายฟีเจอร์ `Scuba-67/0NN/0NNspec.md` (Draft v2) และ tag จะใช้ชื่ออะไร
